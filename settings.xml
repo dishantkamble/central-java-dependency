@@ -14,9 +14,19 @@
       <id>github</id>
       <repositories>
         <repository>
+          <id>central</id>
+          <url>https://repo1.maven.org/maven2</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+          </repository>
+        <repository>
           <id>github</id>
           <name>GitHub Dishant Apache Maven Packages</name>
-          <url>https://maven.pkg.github.com/dishantkamble</url>
+          <url>https://maven.pkg.github.com/dishantkamble/central-java-dependency</url>
         </repository>
       </repositories>
     </profile>
