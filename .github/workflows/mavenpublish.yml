@@ -25,6 +25,6 @@ jobs:
       run: mvn -B install --file pom.xml
 
     - name: Publish to GitHub Packages Apache Maven
-      run: mvn deploy -Dregistry=https://maven.pkg.github.com/dishantkamble -Dtoken=GITHUB_TOKEN
       env:
         GITHUB_TOKEN: ${{ github.token }}
+      run: mvn deploy -Dregistry=https://maven.pkg.github.com/dishantkamble -Dtoken=GITHUB_TOKEN
