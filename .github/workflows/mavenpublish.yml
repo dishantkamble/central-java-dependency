@@ -27,5 +27,4 @@ jobs:
     - name: Publish to GitHub Packages Apache Maven
       env:
         GITHUB_TOKEN: ${{ github.token }}
-        PERSONAL_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
-      run: mvn deploy -Dregistry=https://maven.pkg.github.com/dishantkamble -Dtoken=PERSONAL_TOKEN
+      run: mvn deploy -Dregistry=https://maven.pkg.github.com/dishantkamble -Dtoken=${{ secrets.WORKFLOW_TOKEN }}
