@@ -28,4 +28,4 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ github.token }}
         PERSONAL_TOKEN: ${{ secrets.workflow-central-java-dependency }}
-      run: mvn deploy -Dregistry=https://maven.pkg.github.com/dishantkamble -Dtoken=PERSONAL_TOKEN
+      run: mvn deploy -Dregistry=https://maven.pkg.github.com/dishantkamble -Dtoken=GH_TOKEN
