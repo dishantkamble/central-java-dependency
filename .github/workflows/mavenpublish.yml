@@ -22,11 +22,12 @@ jobs:
         settings-path: ${{ github.workspace }} # location for the settings.xml file
 
     - name: Build with Maven
-      run: mvn -B install --file pom.xml
+#       run: mvn -B install --file pom.xml
+      run: mvn -B clean install -DskipTests --file pom.xml
 
     - name: Publish to GitHub Packages Apache Maven
       env:
-#         GITHUB_TOKEN: ${{ github.token }}
-        WORKFLOW_TOKEN: ${{ secrets.WORKFLOW_TOKEN }} 
+        GITHUB_TOKEN: ${{ github.token }}
+#         WORKFLOW_TOKEN: ${{ secrets.WORKFLOW_TOKEN }} 
 #       run: mvn deploy -Dregistry=https://maven.pkg.github.com/dishantkamble -Dtoken=${{ secrets.WORKFLOW_TOKEN }}
-      run: mvn deploy
+      run: mvn -B deploy --file pom.xml
