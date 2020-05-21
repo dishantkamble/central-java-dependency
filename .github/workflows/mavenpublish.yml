@@ -29,4 +29,4 @@ jobs:
 #         GITHUB_TOKEN: ${{ github.token }}
 #         WORKFLOW_TOKEN: ${{ secrets.WORKFLOW_TOKEN }} 
 #       run: mvn deploy -Dregistry=https://maven.pkg.github.com/dishantkamble -Dtoken=${{ secrets.WORKFLOW_TOKEN }}
-      run: mvn package
+      run: mvn deploy
