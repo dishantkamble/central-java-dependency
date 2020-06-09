@@ -140,13 +140,4 @@
             <url>https://maven.pkg.github.com/dishantkamble/central-java-dependency</url>
         </repository>
     </distributionManagement>
-
-    <!-- <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build> -->
 </project>
