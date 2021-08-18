@@ -17,7 +17,7 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 11
-    - uses: avides/actions-project-version-check@latest
+    - uses: avides/actions-project-version-check@v1.2.0
       id: actions_project_version_check
       with:
         token: ${{ github.token }}
