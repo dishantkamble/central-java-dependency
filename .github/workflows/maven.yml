@@ -22,6 +22,7 @@ jobs:
       with:
         token: ${{ github.token }}
         file-to-check: pom.xml
+        only-return-version: true
     - name: use-version-from-check
       run: "echo 'New version is: ${{ steps.actions_project_version_check.outputs.version }}'"
     - name: Build with Maven
