@@ -17,11 +17,9 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 11
-    - name: Bump Version
-      id: bump
-      uses: nnichols/maven-version-bump-action@v3
-      with:
-        github-token: ${{ github.token }}
+    - name: Bump version
+        id: bump
+        uses: mickem/gh-action-bump-maven-version
     - name: Build with Maven
       run: mvn -B package --file pom.xml install
     - name: Publish to GitHub Packages Apache Maven
