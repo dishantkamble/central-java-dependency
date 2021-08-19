@@ -1,8 +1,6 @@
 name: Java CI with Maven
 
 on:
-  push:
-    branches: [ master ]
   pull_request:
     branches: [ master ]
 
@@ -17,16 +15,5 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 11
-    - name: Bump Version
-      id: bump
-      uses: nnichols/maven-version-bump-action@v4
-      with:
-        github-token: ${{ github.token }}
-    - name: Print Version
-      run: "echo 'New Version: ${{steps.bump.outputs.version}}'"
     - name: Build with Maven
       run: mvn -B package --file pom.xml install
-    - name: Publish to GitHub Packages Apache Maven
-      run: mvn deploy -Dregistry=https://maven.pkg.github.com/dishantkamble -Dtoken=$GH_TOKEN
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
