@@ -17,13 +17,13 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 11
-    - uses: as1de/version-bumped-action@1.0.1
-      name: Version Bumped?
-      id: version-bumped
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - if: steps.version-bumped.outputs.has-bumped
-      run: echo 'version has been bumped to {{ steps.version-bumped.outputs.current-version }}'
+    - name: Bump Version
+      id: bump
+      uses: nnichols/maven-version-bump-action@v4
+      with:
+        github-token: ${{ secrets.github_token }}
+    - name: Print Version
+      run: "echo 'New Version: ${{steps.bump.outputs.version}}'"
     - name: Build with Maven
       run: mvn -B package --file pom.xml install
     - name: Publish to GitHub Packages Apache Maven
