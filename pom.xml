@@ -18,7 +18,7 @@
 
     <properties>
         <java.version>11</java.version>
-        <spring-boot-starter-parent.version>2.6.0</spring-boot-starter-parent.version>
+        <spring-boot-starter-parent.version>2.6.1</spring-boot-starter-parent.version>
         <spring-cloud.version>2020.0.4</spring-cloud.version>
         <spring-cloud-starter.version>3.0.5</spring-cloud-starter.version>
         <netflix-eureka-client.version>3.0.4</netflix-eureka-client.version>
