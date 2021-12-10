@@ -31,7 +31,7 @@
         <commons-beanutils.version>1.9.4</commons-beanutils.version>
         <ehcache.version>3.9.7</ehcache.version>
         <cache-api.version>1.1.1</cache-api.version>
-        <mockneat.version>0.4.7</mockneat.version>
+        <mockneat.version>0.4.8</mockneat.version>
     </properties>
 
     <dependencies>
