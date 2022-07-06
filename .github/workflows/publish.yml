@@ -18,11 +18,10 @@ jobs:
         java-version: '11'
     - name: Bump Version
       id: bump
-      uses: remorses/bump-version@js
+      uses: nnichols/maven-version-bump-action@v4
       with:
-        version_file: ./VERSION
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
+        pom-path: ./pom.xml
+        github-token: ${{ github.token }}
     - name: Print Version
       run: "echo 'New Version: ${{steps.bump.outputs.version}}'"
     - name: Build with Maven
