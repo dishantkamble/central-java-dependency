@@ -18,7 +18,7 @@ jobs:
         java-version: '11'
     - name: Bump Version
       id: bump
-      uses: nnichols/maven-version-bump-action@v4
+      uses: remorses/bump-version@js
       with:
         github-token: ${{ github.token }}
     - name: Print Version
