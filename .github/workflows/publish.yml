@@ -18,9 +18,9 @@ jobs:
         java-version: '11'
     - name: Bump Version
       id: bump
-      uses: nnichols/maven-version-bump-action@v4
+      uses: nnichols/maven-version-bump-action@v3
       with:
-        pom-path: pom.xml
+        pom-path: ./pom.xml
         github-token: ${{ github.token }}
     - name: Print Version
       run: "echo 'New Version: ${{steps.bump.outputs.version}}'"
