@@ -20,7 +20,7 @@ jobs:
       id: bump
       uses: nnichols/maven-version-bump-action@v4
       with:
-        pom-path: ./pom.xml
+        pom-path: pom.xml
         github-token: ${{ github.token }}
     - name: Print Version
       run: "echo 'New Version: ${{steps.bump.outputs.version}}'"
