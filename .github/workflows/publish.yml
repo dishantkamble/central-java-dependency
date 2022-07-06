@@ -18,12 +18,15 @@ jobs:
         java-version: '11'
     - name: Bump Version
       id: bump
-      uses: nnichols/maven-version-bump-action@v3
+      uses: remorses/bump-version@js
       with:
-        pom-path: ./pom.xml
-        github-token: ${{ github.token }}
+        version_file: ./VERSION
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
     - name: Print Version
       run: "echo 'New Version: ${{steps.bump.outputs.version}}'"
+    - name: Update version in pom.xml (Release only)
+      run: mvn -B versions:set -DnewVersion=${{ steps.bump.outputs.version }} -DgenerateBackupPoms=false
     - name: Build with Maven
       run: mvn -B package --file pom.xml install
     - name: Publish to GitHub Packages Apache Maven
