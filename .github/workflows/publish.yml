@@ -20,7 +20,9 @@ jobs:
       id: bump
       uses: remorses/bump-version@js
       with:
-        github-token: ${{ github.token }}
+        version_file: ./VERSION
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
     - name: Print Version
       run: "echo 'New Version: ${{steps.bump.outputs.version}}'"
     - name: Build with Maven
