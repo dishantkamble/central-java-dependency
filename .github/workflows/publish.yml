@@ -34,6 +34,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ github.token }}
     - name: Create Release
-      uses: release-drafter/release-drafter@v5
+      uses: Roang-zero1/github-create-release-action@v2
+      with:
+        created_tag: ${{ steps.bump.outputs.version }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
