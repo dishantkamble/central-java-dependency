@@ -14,7 +14,8 @@
     <artifactId>central-java-dependency</artifactId>
     <version>1.0.1</version>
     <description>Central Java dependency project</description>
-    <packaging>pom</packaging>
+    <!-- <packaging>pom</packaging> -->
+    <packaging>jar</packaging>
 
     <properties>
         <java.version>11</java.version>
