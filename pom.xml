@@ -26,7 +26,7 @@
         <mantis-runtime.version>1.3.52</mantis-runtime.version>
         <jackson-databind.version>2.13.3</jackson-databind.version>
         <jaxb.version>4.0.0</jaxb.version>
-        <springdoc-openapi.version>1.6.9</springdoc-openapi.version>
+        <springdoc-openapi.version>1.6.10</springdoc-openapi.version>
         <liquibase.version>4.15.0</liquibase.version>
         <spring-kafka.version>2.9.0</spring-kafka.version>
         <commons-beanutils.version>1.9.4</commons-beanutils.version>
