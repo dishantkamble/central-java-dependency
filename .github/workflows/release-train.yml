@@ -43,11 +43,15 @@ jobs:
         GITHUB_TOKEN: ${{ github.token }}
     - name: Create changelog text
       id: changelog
-      uses: mikepenz/release-changelog-builder-action@v3.3.0
+      uses: mikepenz/release-changelog-builder-action@v3.3.1
       with:
         configuration: "changelog_config.json"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Echo Configuration Changelog
+      env:
+        CHANGELOG: ${{ steps.changelog.outputs.changelog }}
+      run: echo "$CHANGELOG"
     - name: Create Release
       uses: Roang-zero1/github-create-release-action@v2
       with:
