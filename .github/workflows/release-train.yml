@@ -48,6 +48,10 @@ jobs:
         configuration: "changelog_config.json"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Echo Configuration Changelog
+      env:
+        CHANGELOG: ${{ steps.changelog.outputs.changelog }}
+      run: echo "$CHANGELOG"
     - name: Create Release
       uses: Roang-zero1/github-create-release-action@v2
       with:
