@@ -10,7 +10,7 @@
         },
         {
             "title": "## 💬 Other",
-            "empty_content": "No matching PRs"
+            "labels": ["dependency"]
         }
     ],
     "max_pull_requests": 1000,
