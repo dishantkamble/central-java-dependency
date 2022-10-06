@@ -53,7 +53,7 @@ jobs:
         CHANGELOG: ${{ steps.changelog.outputs.changelog }}
       run: echo "$CHANGELOG"
     - name: Create Release
-      uses: Roang-zero1/github-create-release-action@v2
+      uses: Roang-zero1/github-create-release-action@v2.3.2
       with:
         created_tag: ${{ steps.version.outputs.version }}
         release_text: ${{ steps.changelog.outputs.changelog}}
