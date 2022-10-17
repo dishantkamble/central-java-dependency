@@ -48,10 +48,6 @@ jobs:
         configuration: "changelog_config.json"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - name: Echo Configuration Changelog
-      env:
-        CHANGELOG: ${{ steps.changelog.outputs.changelog }}
-      run: echo "$CHANGELOG"
     - name: Create Release
       uses: ncipollo/release-action@v1.11.1
       with:
