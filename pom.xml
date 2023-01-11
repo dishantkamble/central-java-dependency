@@ -12,7 +12,7 @@
 
     <groupId>com.dishant</groupId>
     <artifactId>central-java-dependency</artifactId>
-    <version>2.3.28</version>
+    <version>2.3.29</version>
     <description>Central Java dependency project</description>
     <packaging>pom</packaging>
 
