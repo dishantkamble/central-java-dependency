@@ -54,13 +54,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ github.token }}
 
-    - name: Create changelog text
-      id: changelog
-      uses: mikepenz/release-changelog-builder-action@v3.7.1
-      with:
-        configuration: "../../changelog_config.json"
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Generate Release change-log
       id: change-log
       uses: release-drafter/release-drafter@v5
