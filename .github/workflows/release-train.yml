@@ -71,12 +71,3 @@ jobs:
         publish: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-#     - name: Create Release
-#       uses: ncipollo/release-action@v1.12.0
-#       with:
-#         tag: ${{ steps.version.outputs.version }}
-#         body: ${{ steps.changelog.outputs.changelog}}
-#         generateReleaseNotes: true
-#       env:
-#         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
