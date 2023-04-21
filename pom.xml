@@ -7,7 +7,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.5</version>
+        <version>3.0.6</version>
     </parent>
 
     <groupId>com.dishant</groupId>
@@ -18,12 +18,12 @@
 
     <properties>
         <java.version>11</java.version>
-        <spring-boot-starter-parent.version>3.0.5</spring-boot-starter-parent.version>
+        <spring-boot-starter-parent.version>3.0.6</spring-boot-starter-parent.version>
         <spring-cloud.version>2022.0.2</spring-cloud.version>
         <spring-cloud-starter.version>4.0.2</spring-cloud-starter.version>
         <spring-cloud-starter-netflix-zuul.version>2.2.10.RELEASE</spring-cloud-starter-netflix-zuul.version>
         <netflix-eureka-client.version>4.0.1</netflix-eureka-client.version>
-        <mantis-runtime.version>2.0.25</mantis-runtime.version>
+        <mantis-runtime.version>2.0.26</mantis-runtime.version>
         <jackson-databind.version>2.14.2</jackson-databind.version>
         <jaxb.version>4.0.2</jaxb.version>
         <springdoc-openapi.version>1.7.0</springdoc-openapi.version>
