@@ -27,7 +27,7 @@
         <jackson-databind.version>2.15.0</jackson-databind.version>
         <jaxb.version>4.0.2</jaxb.version>
         <springdoc-openapi.version>1.7.0</springdoc-openapi.version>
-        <liquibase.version>4.21.1</liquibase.version>
+        <liquibase.version>4.22.0</liquibase.version>
         <spring-kafka.version>3.0.6</spring-kafka.version>
         <commons-beanutils.version>1.9.4</commons-beanutils.version>
         <ehcache.version>3.10.8</ehcache.version>
