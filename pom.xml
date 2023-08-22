@@ -23,12 +23,12 @@
         <spring-cloud-starter.version>4.0.4</spring-cloud-starter.version>
         <spring-cloud-starter-netflix-zuul.version>2.2.10.RELEASE</spring-cloud-starter-netflix-zuul.version>
         <netflix-eureka-client.version>4.0.3</netflix-eureka-client.version>
-        <mantis-runtime.version>2.0.73</mantis-runtime.version>
+        <mantis-runtime.version>2.0.74</mantis-runtime.version>
         <jackson-databind.version>2.15.2</jackson-databind.version>
         <jaxb.version>4.0.3</jaxb.version>
         <springdoc-openapi.version>1.7.0</springdoc-openapi.version>
         <liquibase.version>4.23.1</liquibase.version>
-        <spring-kafka.version>3.0.9</spring-kafka.version>
+        <spring-kafka.version>3.0.10</spring-kafka.version>
         <commons-beanutils.version>1.9.4</commons-beanutils.version>
         <ehcache.version>3.10.8</ehcache.version>
         <cache-api.version>1.1.1</cache-api.version>
