@@ -24,7 +24,7 @@
         <spring-cloud-starter-netflix-zuul.version>2.2.10.RELEASE</spring-cloud-starter-netflix-zuul.version>
         <netflix-eureka-client.version>4.0.3</netflix-eureka-client.version>
         <mantis-runtime.version>2.0.94</mantis-runtime.version>
-        <jackson-databind.version>2.15.2</jackson-databind.version>
+        <jackson-databind.version>2.15.3</jackson-databind.version>
         <jaxb.version>4.0.3</jaxb.version>
         <springdoc-openapi.version>1.7.0</springdoc-openapi.version>
         <liquibase.version>4.24.0</liquibase.version>
