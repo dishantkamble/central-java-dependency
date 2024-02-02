@@ -25,7 +25,7 @@ jobs:
       uses: gittools/actions/gitversion/execute@v0.10.2
     - name: Semantic Version
       id: version
-      uses: paulhatch/semantic-version@v5.3.0
+      uses: paulhatch/semantic-version@v5.4.0
       with:
         tag_prefix: ""
         major_pattern: /feat?/
@@ -56,7 +56,7 @@ jobs:
 
     - name: Generate Release change-log
       id: change-log
-      uses: release-drafter/release-drafter@v5
+      uses: release-drafter/release-drafter@v6
       with:
         name: ${{ steps.version.outputs.version }}
         tag: ${{ steps.version.outputs.version }}
