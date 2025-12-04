@@ -23,7 +23,7 @@
         <spring-cloud-starter.version>5.0.0</spring-cloud-starter.version>
         <spring-cloud-starter-netflix-zuul.version>2.2.10.RELEASE</spring-cloud-starter-netflix-zuul.version>
         <netflix-eureka-client.version>5.0.0</netflix-eureka-client.version>
-        <mantis-runtime.version>4.0.4</mantis-runtime.version>
+        <mantis-runtime.version>4.0.5</mantis-runtime.version>
         <jackson-databind.version>2.20.1</jackson-databind.version>
         <jaxb.version>4.0.6</jaxb.version>
         <springdoc-openapi.version>1.8.0</springdoc-openapi.version>
