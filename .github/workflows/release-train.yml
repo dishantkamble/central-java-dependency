@@ -25,7 +25,7 @@ jobs:
       uses: gittools/actions/gitversion/execute@v4.7.0
     - name: Semantic Version
       id: version
-      uses: paulhatch/semantic-version@v6.0.2
+      uses: paulhatch/semantic-version@v6.0.3
       with:
         tag_prefix: ""
         major_pattern: /feat?/
